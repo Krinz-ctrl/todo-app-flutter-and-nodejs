@@ -1,11 +1,23 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
-// REMOVED: const db = require("../config/db"); -> No longer needed here
 
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
+    name: {
+        type: String,
+        required: true,
+        maxlength: 15,
+        minlength: 10,
+    },
+    phone: {
+        type: Number,
+        required: true,
+        unique: true,
+        maxlength: 10,
+        minlength: 10,
+    },
     email: {
         type: String,
         lowercase: true,

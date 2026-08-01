@@ -2,9 +2,9 @@ const UserModel = require("../model/user.model");
 
 class UserService {
 
-    static async registerUser(email, password) {
+    static async registerUser(name, phone, email, password) {
         try {
-            const createUser = new UserModel({ email, password });
+            const createUser = new UserModel({ name, phone, email, password });
             return await createUser.save();
 
         } catch (err) {
