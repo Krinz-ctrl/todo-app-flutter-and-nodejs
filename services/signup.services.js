@@ -1,6 +1,6 @@
 const UserModel = require("../model/user.model");
 
-class UserService {
+class SignupService {
 
     static async registerUser(name, phone, email, password) {
         try {
@@ -10,9 +10,9 @@ class UserService {
         } catch (err) {
             throw err;
         }
-
-
     }
 }
 
-module.exports = UserService;
+
+
+module.exports = SignupService;
