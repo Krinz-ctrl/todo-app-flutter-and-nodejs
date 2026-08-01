@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/Krinz-ctrl/todo-app-flutter-and-nodejs#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "body-parser": "^2.3.0",
     "express": "^5.2.1",
-    "mongoose": "^9.9.1"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.1",
+    "nodemon": "^3.1.14"
   }
 }
